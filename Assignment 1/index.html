@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .left-tab {
+            /* background-color: red; */
+            flex: 1;
+            border-style: solid;
+            /* border-right: 5px; */
+            border-left: 0px;
+            border-top: 5px;
+            border-bottom: 0px;
+        }
+
+        .right-tab {
+            flex: 4
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        input {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .card{
+            min-width:  150px;
+        }
+        .Buybutton {
+            width: 100%;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-tab">
+
+            <div>
+                <h2>Type</h2>
+
+                <input type="checkbox" name="ALL" />
+                <label for="vehicle1"> ALL</label><br>
+
+                <input type="checkbox" name="Qualified Products" />
+                <label for="vehicle2"> Qualified Products</label><br>
+
+                <input type="checkbox" name="ALL" />
+                <label for="vehicle3"> Premium Products</label><br>
+            </div>
+
+            <div>
+                <h2>Category</h2>
+
+                <input type="checkbox" name="Category" />
+                <label for="vehicle1"> Category#1</label><br>
+
+                <input type="checkbox" name="Category" />
+                <label for="vehicle1"> Category#2</label><br>
+
+                <input type="checkbox" name="Category" />
+                <label for="vehicle1"> Category#3</label><br>
+
+                <input type="checkbox" name="Category" />
+                <label for="vehicle1"> Category#4</label><br>
+
+            </div>
+        </div>
+
+        <div class="right-tab">
+            <div class="row">
+                <input type="text" placeholder="What do you want?" />
+                <button>Search</button>
+                <span>Price:</span>
+                <input placeholder="from" />
+                <input placeholder="to" />
+                <button>Filter</button>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Product Name</h2>
+                    <img src="./img/Sketchpad.png"/>
+                    <p>Nostrud anim est eiusmod in minim quis do eiusmod. Cillum excepteur ex laborum aute adipisicing nisi labore culpa deserunt. Reprehenderit mollit dolor veniam consectetur aliquip. Lorem nisi sunt aliquip sit dolore reprehenderit fugiat fugiat. Culpa consequat veniam eiusmod aute voluptate aute culpa velit ut elit laboris quis.</p>
+                    <h3>150 EGP</h3>
+                    <button class="Buybutton">
+                        <img src="./img/cart.svg" width="15px"/>Order
+                    </button>
+                </div>
+                <div class="card">
+                    <h2>Product Name</h2>
+                    <img src="./img/Sketchpad.png"/>
+                    <p>Sint exercitation est pariatur consequat est eiusmod elit ipsum voluptate elit officia qui Lorem exercitation. Consectetur in sit incididunt consequat cupidatat aliquip. Ea officia duis reprehenderit cupidatat.</p>
+                    <h3>150 EGP</h3>
+                    <button class="Buybutton">
+                        <img src="./img/cart.svg" width="15px"/>Order
+                    </button>
+                </div>
+                <div class="card">
+                    <h2>Product Name</h2>
+                    <img src="./img/Sketchpad.png"/>
+                    <p>Sunt dolor exercitation esse ad dolore culpa est culpa eu anim nostrud. Do Lorem consectetur Lorem pariatur elit amet voluptate cupidatat elit cupidatat sint fugiat dolore. Culpa esse consectetur adipisicing reprehenderit proident.</p>
+                    <h3>150 EGP</h3>
+                    <button class="Buybutton">
+                        <img src="./img/cart.svg" width="15px"/>Order
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
